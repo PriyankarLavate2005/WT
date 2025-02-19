@@ -1,6 +1,8 @@
 import React from 'react';
 import './Home.css';
+
 import { useNavigate } from 'react-router-dom';
+
 const Home = () => {
   const Navigate=useNavigate()
   const SHOP=()=>{

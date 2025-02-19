@@ -7,8 +7,8 @@ import Header from '../components/Header';
 const CombinedPage = () => {
   return (
     <div>
-        <Header/>
-      <ProductList />
+    <Header/>
+    <ProductList />
       
     </div>
   );

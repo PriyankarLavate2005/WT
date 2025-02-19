@@ -11,18 +11,12 @@ const connectDB=require('./Modals/DB')
 app.use(express.json());
 app.use(cors()); // Use the cors middleware
 connectDB()
-
 // Function to seed initial data into the database
-
-
 // Seed the database on server startup
 seedDatabase();
-
-
 const asyncHandler = fn => (req, res, next) => {
   Promise.resolve(fn(req, res, next)).catch(next);
 };
-
 app.get('/api/products', asyncHandler(async (req, res) => {
   const allProducts = await Product.find();
   res.json(allProducts);
